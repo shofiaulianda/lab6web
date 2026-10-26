@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 6 - DOM dan Event Handling</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1 id="judul">Latihan DOM</h1>
+        <p id="pesan">Belum ada tindakan.</p>
+        <button id="tombolAksi" type="button">Klik Saya</button>
+
+        <section>
+            <h2>Latihan 3 - Mengubah Gaya</h2>
+            <p id="teksGaya">Ini adalah teks untuk latihan gaya CSS.</p>
+            <button id="tombolGaya" type="button">Ubah Gaya</button>
+        </section>
+
+        <section>
+            <h2>Latihan 4 - Menghitung Karakter</h2>
+            <label for="namaInput">Masukkan nama:</label>
+            <input type="text" id="namaInput" maxlength="40">
+            <p>Jumlah karakter: <span id="jumlahKarakter">0</span></p>
+        </section>
+
+        <section>
+            <h2>Latihan 5 - Validasi Form</h2>
+            <form id="formPendaftaran" novalidate>
+                <label for="nama">Nama lengkap</label>
+                <input id="nama" type="text">
+
+                <label for="email">Email</label>
+                <input id="email" type="email">
+
+                <label for="usia">Usia</label>
+                <input id="usia" type="number" min="17" max="100">
+
+                <button type="submit">Daftar</button>
+            </form>
+            <p id="pesanForm" aria-live="polite"></p>
+        </section>
+
+        <section>
+            <h2>Latihan 6 - Daftar Tugas</h2>
+            <label for="inputTugas">Tugas baru</label>
+            <input id="inputTugas" type="text">
+            <button id="tambahTugas" type="button">Tambah Tugas</button>
+            <p id="pesanTugas" aria-live="polite"></p>
+            <ul id="daftarTugas"></ul>
+        </section>
+
+        <section>
+            <h2>Mini Project - Pendaftaran Workshop</h2>
+            <p>Isi formulir berikut untuk mendaftar workshop.</p>
+
+            <form id="formWorkshop" novalidate>
+                <label for="namaWorkshop">Nama lengkap</label>
+                <input id="namaWorkshop" type="text"
+                       placeholder="Masukkan nama lengkap">
+                <small id="errorNamaWorkshop"></small>
+
+                <label for="emailWorkshop">Alamat email</label>
+                <input id="emailWorkshop" type="email"
+                       placeholder="contoh@email.com">
+                <small id="errorEmailWorkshop"></small>
+
+                <label for="sesiWorkshop">Pilih sesi workshop</label>
+                <select id="sesiWorkshop">
+                    <option value="">-- Pilih sesi --</option>
+                    <option value="HTML dan CSS">HTML dan CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Database">Database</option>
+                </select>
+                <small id="errorSesiWorkshop"></small>
+
+                <label for="catatanWorkshop">Catatan (opsional)</label>
+                <textarea id="catatanWorkshop" maxlength="200"
+                          placeholder="Tulis catatan..."></textarea>
+
+                <p>Jumlah karakter: <span id="jumlahCatatan">0</span>/200</p>
+
+                <button type="submit">Daftar Workshop</button>
+                <button type="reset" form="formWorkshop">Reset Workshop</button>
+
+                <p id="hasilWorkshop" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

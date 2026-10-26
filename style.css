@@ -1,0 +1,191 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TAMPILAN UTAMA */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef7f0;
+    color: #293b30;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* JUDUL */
+h1 {
+    color: #206b42;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+h2 {
+    color: #28794c;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+/* BAGIAN LATIHAN DAN WORKSHOP */
+section {
+    margin-top: 28px;
+    padding: 22px;
+    background-color: #f8fcf9;
+    border: 1px solid #dceade;
+    border-radius: 12px;
+}
+
+/* LABEL FORM */
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #294b36;
+}
+
+/* INPUT, PILIHAN, DAN CATATAN */
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 8px;
+    border: 1px solid #cbd8ce;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #293b30;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #75ad87;
+    border-color: #28794c;
+}
+
+/* TOMBOL */
+button {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #28794c;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #185735;
+}
+
+/* LATIHAN 3 - UBAH GAYA */
+.highlight {
+    padding: 12px;
+    color: #185735;
+    background-color: #dff3e5;
+    border-left: 4px solid #28794c;
+    border-radius: 5px;
+}
+
+.teks-besar {
+    font-size: 1.3rem;
+}
+
+/* LATIHAN 5 - PESAN VALIDASI */
+#pesanForm {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+/* LATIHAN 6 - DAFTAR TUGAS */
+#daftarTugas {
+    padding-left: 22px;
+    margin-top: 12px;
+}
+
+#daftarTugas li {
+    margin-bottom: 10px;
+}
+
+.selesai span {
+    text-decoration: line-through;
+    color: #687386;
+}
+
+/* WORKSHOP - PESAN ERROR */
+small {
+    display: block;
+    color: #c62828;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+#hasilWorkshop {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* JUMLAH KARAKTER */
+#jumlahCatatan {
+    color: #28794c;
+    font-weight: bold;
+}
+
+/* TAMPILAN HP */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 16px;
+        margin: 5px auto;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}
